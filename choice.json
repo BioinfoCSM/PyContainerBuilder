@@ -1,0 +1,5 @@
+{
+  "source" : {"docker":"centos:7.9.2009", "library":"centos:7"},
+  "system_tools" : ["wget", "which", "git"],
+  "conda_tools" : ["fastqc", "fastp"]
+}
