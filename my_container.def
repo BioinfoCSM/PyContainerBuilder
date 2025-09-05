@@ -1,6 +1,0 @@
-Bootstrap: library
-From: centos:7
-
-%files
-	/home/zhaolab/chengsiming/test/python/CentOS-Base.repo /etc/yum.repos.d/
-	/home/zhaolab/chengsiming/test/python/Miniforge3-25.3.1-0-Linux-x86_64.sh /opt/
