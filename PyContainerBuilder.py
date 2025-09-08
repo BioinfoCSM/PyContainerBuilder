@@ -55,7 +55,7 @@ class main :
 			system_tools = []
 			conda_tools = []
 			while True :
-				temp = prompt ("system_tools(input system cli tool you want to install by yum,such as 'htop',press 'done' to skip installation): ")
+				temp = prompt ("system_tools(input system cli tool you want to install by yum,such as 'htop',input 'done' to skip installation): ")
 				if re.fullmatch ("done\s*", temp): 
 					break 
 				else : 
@@ -63,7 +63,7 @@ class main :
 					continue
 			system_tools = " ".join (list (dict.fromkeys (system_tools + self.choice["system_tools"])))
 			while True : 
-				temp = prompt ("conda_tools(input software name you want to install by conda/mamba,such as 'samtools','r-ggplot2','bioconductor',press 'done' skip installation): ")
+				temp = prompt ("conda_tools(input software name you want to install by conda/mamba,such as 'samtools','r-ggplot2','bioconductor',input 'done' skip installation): ")
 				if re.fullmatch ("done\s*", temp) : 
 					break
 				else : 
@@ -149,7 +149,7 @@ channel_priority: flexible" > /opt/miniforge3/.condarc
 				try : 
 					container_type = temp1
 					container_name = temp2
-					os.system (f"{container_type} build -f {container_name}.sif my_container.def")
+					pass
 				except NameError : 
 					print ("check software name and execute program again")
 				else : 
