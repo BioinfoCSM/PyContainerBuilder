@@ -136,7 +136,7 @@ channel_priority: flexible" > /opt/miniforge3/.condarc
 		container_name = ""
 		while True : 
 			temp1 = prompt ("container_type(tool for building,'singularity' or 'apptainer'): ")
-			temp2 = prompt ("container_name(the name of this container): ")
+			temp2 = prompt ("container_name(the name of this container,do not use spaces if multiple character presents): ")
 			if temp1 == "" or temp2 == "" : 
 				try : 
 					os.system ("singularity build -f my_container.sif my_container.def")
