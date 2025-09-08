@@ -91,7 +91,7 @@ channel_priority: flexible" > /opt/miniforge3/.condarc
 	mamba install -c bioconda -c conda-forge -c r {conda_tools} -y
 
 %environment
-	export /opt/miniforge3/envs/my_envs/bin:$PATH
+	export PATH=/opt/miniforge3/envs/my_envs/bin:$PATH
 """
 			fw.write (post)
 #===e.g., author,version,description===
