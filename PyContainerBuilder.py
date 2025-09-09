@@ -9,7 +9,7 @@ import os,re,sys
 from dataclasses import dataclass
 from prompt_toolkit import prompt
 
-parser = argparse.ArgumentParser (description = "A tool for fast building of singularity/apptainer container")
+parser = argparse.ArgumentParser (description = "An interactive tool for fast building of singularity/apptainer container")
 parser.add_argument ("--choice", type = str, help = "some choice is provied during contianer building, json format", required = False, default = "choice.json")
 args = parser.parse_args ()
 
